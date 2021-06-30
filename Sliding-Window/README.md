@@ -1,5 +1,5 @@
 
-#Sliding window
+# Sliding window
 
 Usually a pattern used to solve problems dealing with contiguous subarrays of a given size.
 for instance, find the maximum sum subarray of size K.
@@ -26,7 +26,7 @@ def find_sum(K,arr):
         result.append(s)
 ```
 
-###Time Complexity : O(N*K)
+### Time Complexity : O(N*K)
 the problem with this algorithm is that we have to calculate the sum of N elements multiple times. Imagine if this N is a very big number like 10,000. 
 There is an overlapping part of any two consectuive subarrays of size *K*. And this overlapping part has *K-1* elements. So techinally, this problem deals with a moving window of size *K*. Every time this window moves, an element going out of the window gets subtracted and an element going in will be added. 
 
