@@ -6,14 +6,14 @@ class Solution(object):
         """
         a = [0] * 27
         flag = False
-        for ch in s : 
+        for ch in s :
             a[ord(ch)-ord('a')] += 1
         for i in a :
             if i%2 != 0 :
-                if flag : # Allow one odd number frequency 
+                if flag : # Allow one odd number frequency
                     return False
                 else :
-                    flag = True 
-	return True 
+                    flag = True
+	return True
 
-# Problem 266 on leetcode 
+# Problem 266 on leetcode
